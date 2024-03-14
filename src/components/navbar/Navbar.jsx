@@ -27,7 +27,7 @@ const Navbar = () => {
 						x: [null, 100, 0],
 					}}
 					transition={{ duration: 0.5 }}
-					href="https://github.com/IgorPanasik/portfolio/"
+					href="https://igorpanasik.github.io/portfolio/"
 					className="wrapper__logo-name"
 				>
 					Portfolio<span>&#x25A0;</span>

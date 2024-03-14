@@ -43,7 +43,7 @@ const Services = () => {
 			</motion.div>
 			<motion.div className="title__container" variants={variants}>
 				<div className="title">
-					<img src="/people.webp" alt="people" />
+					<img src="./people.webp" alt="people" />
 					<h1>
 						<motion.b>Unique</motion.b> Ideas and <motion.b>solutions</motion.b>
 					</h1>
