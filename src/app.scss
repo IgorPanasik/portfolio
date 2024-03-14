@@ -1,0 +1,29 @@
+@import "./variables";
+
+html {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "DM Sans", sans-serif;
+	background: $background-general;
+	color: $color-text-general;
+}
+
+section {
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: center;
+	overflow: hidden;
+}
+
+#Contact {
+	overflow: none;
+}
+
+@media (max-width: 1024px) {
+	.cursor {
+		display: none;
+	}
+}

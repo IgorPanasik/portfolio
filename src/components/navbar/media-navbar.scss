@@ -1,0 +1,188 @@
+@import "../../variables";
+
+@media (max-width: 1518px) {
+	.navbar {
+		.wrapper {
+			justify-content: space-around;
+		}
+	}
+}
+
+@media (max-width: 1367px) {
+	.navbar {
+		.wrapper {
+			justify-content: space-around;
+
+			.wrapper__logo-name {
+				font-size: 20px;
+			}
+
+			.wrapper__social-icons {
+				gap: 7px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1080px) {
+	.navbar {
+		.wrapper {
+			justify-content: space-around;
+
+			.wrapper__logo-name {
+				font-size: 20px;
+			}
+
+			.wrapper__social-icons {
+				gap: 7px;
+			}
+		}
+	}
+}
+
+@media (max-width: 865px) {
+	.navbar {
+		.wrapper {
+			gap: 50px;
+
+			.wrapper__logo-name {
+				font-size: 20px;
+
+				&:hover {
+					color: $color-text-general !important;
+					transform: none !important;
+					background: transparent !important;
+				}
+			}
+
+			.wrapper__social-icons {
+				gap: 0px;
+
+				a {
+					width: 30px;
+
+					&:hover {
+						color: $color-text-general !important;
+						transform: none !important;
+						background: transparent !important;
+					}
+				}
+			}
+		}
+
+		.sidebar {
+			.sidebar__background {
+				width: 320px;
+				.links {
+					a {
+						font-size: 35px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.navbar {
+		.wrapper {
+			.wrapper__logo-name {
+				display: none;
+			}
+
+			.wrapper__social-icons {
+				gap: 7px;
+
+				a {
+					width: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 720px) {
+	.navbar {
+		.wrapper {
+			justify-content: center;
+			.wrapper__logo-name {
+				display: none;
+			}
+
+			.wrapper__social-icons {
+				gap: 0;
+
+				a {
+					width: 28px;
+				}
+			}
+		}
+
+		.sidebar {
+			.sidebar__background {
+				top: 0px;
+				left: 0px;
+				width: 200px;
+
+				.links {
+					a {
+						font-size: 18px;
+					}
+				}
+			}
+
+			button {
+				width: 28px;
+				height: 28px;
+				left: 36px;
+				top: 36px;
+			}
+		}
+	}
+}
+
+@media (max-width: 532px) {
+	.navbar {
+		.wrapper {
+			.wrapper__social-icons {
+				padding: 0 10px;
+
+				a {
+					width: 25px;
+					padding: 5px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.navbar {
+		.wrapper {
+			.wrapper__social-icons {
+				padding: 0 10px;
+				gap: 5px;
+
+				a {
+					width: 25px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.navbar {
+		.wrapper {
+			justify-content: flex-end;
+			.wrapper__social-icons {
+				padding: 0 10px;
+				gap: 5px;
+
+				a {
+					width: 25px;
+				}
+			}
+		}
+	}
+}

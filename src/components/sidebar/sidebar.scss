@@ -1,0 +1,51 @@
+@import "../../variables";
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: $background-sidebar-color;
+	color: rgb(24, 24, 24);
+
+	&__background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		width: 400px;
+		height: 100%;
+		background: $background-sidebar-color;
+
+		.links {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+
+			a {
+				font-size: 40px;
+			}
+		}
+	}
+
+	button {
+		position: fixed;
+		top: 25px;
+		left: 25px;
+		width: 50px;
+		height: 50px;
+		z-index: 999;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+	}
+}

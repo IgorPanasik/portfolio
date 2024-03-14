@@ -1,0 +1,623 @@
+@import "../../variables";
+
+@media screen and (max-width: 1478px) {
+	.services {
+		gap: 20px;
+		.text__container {
+			p {
+				font-size: 16px;
+			}
+
+			hr {
+				width: 300px;
+			}
+		}
+
+		.title__container {
+			.title {
+				h1 {
+					font-size: 50px;
+				}
+
+				img {
+					width: 280px;
+				}
+
+				button {
+					width: 280px;
+					height: 80px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1301px) {
+	.services {
+		gap: 40px;
+		.text__container {
+			p {
+				font-size: 14px;
+			}
+
+			hr {
+				width: 250px;
+			}
+		}
+
+		.title__container {
+			.title {
+				h1 {
+					font-size: 50px;
+				}
+
+				img {
+					width: 250px;
+				}
+
+				button {
+					width: 250px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.services {
+		gap: 40px;
+
+		.title__container {
+			.title {
+				h1 {
+					font-size: 50px;
+				}
+
+				img {
+					width: 300px;
+				}
+
+				button {
+					width: 300px;
+					font-size: 20px;
+				}
+			}
+		}
+
+		.list__container {
+			padding: 0 10px;
+
+			.box {
+				max-width: 280px;
+				padding: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1201px) {
+	.services {
+		gap: 40px;
+
+		.title__container {
+			.title {
+				gap: 20px;
+
+				h1 {
+					font-size: 35px;
+				}
+
+				img {
+					width: 280px;
+					height: 80px;
+				}
+
+				button {
+					width: 280px;
+					height: 80px;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.services {
+		gap: 40px;
+
+		.title__container {
+			.title {
+				h1 {
+					font-size: 50px;
+				}
+
+				img {
+					width: 300px;
+				}
+
+				button {
+					width: 300px;
+					font-size: 20px;
+				}
+			}
+		}
+		.list__container {
+			padding: 0 10px;
+
+			.box {
+				max-width: 280px;
+				padding: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1122px) {
+	.services {
+		gap: 40px;
+
+		.text__container {
+			flex-grow: 0;
+			flex-shrink: 1;
+			flex-basis: auto;
+			p {
+				font-size: 12px;
+			}
+
+			hr {
+				width: 250px;
+			}
+		}
+
+		.title__container {
+			flex-grow: 0;
+			flex-shrink: 1;
+			flex-basis: auto;
+			.title {
+				gap: 30px;
+
+				h1 {
+					font-size: 35px;
+				}
+
+				img {
+					width: 200px;
+					height: 50px;
+				}
+
+				button {
+					width: 200px;
+					height: 50px;
+					font-size: 20px;
+				}
+			}
+		}
+		.list__container {
+			flex-grow: 0;
+			flex-shrink: 1;
+			flex-basis: auto;
+
+			.box {
+				max-width: 280px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1175px) {
+	.services {
+		.list__container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			max-width: 1000px;
+			margin: 0 auto;
+			.box {
+				padding: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1175px) {
+	.services {
+		.text__container {
+			p {
+				font-size: 11px;
+			}
+
+			hr {
+				width: 280px;
+			}
+		}
+
+		.list__container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			max-width: 900px;
+			margin: 0 auto;
+			.box {
+				font-size: 14px;
+				padding: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.services {
+		.text__container {
+			p {
+				font-size: 11px;
+			}
+
+			hr {
+				width: 220px;
+			}
+		}
+
+		.title__container {
+			.title {
+				gap: 20px;
+
+				h1 {
+					font-size: 30px;
+				}
+
+				img {
+					width: 180px;
+					height: 50px;
+				}
+
+				button {
+					width: 180px;
+					height: 50px;
+					font-size: 20px;
+				}
+			}
+		}
+		.list__container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			max-width: 700px;
+			margin: 0 auto;
+			.box {
+				font-size: 12px;
+				padding: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 865px) {
+	.services {
+		.text__container {
+			p {
+				font-size: 10px;
+			}
+
+			hr {
+				width: 180px;
+			}
+		}
+
+		.title__container {
+			.title {
+				gap: 20px;
+
+				h1 {
+					font-size: 30px;
+
+					b {
+						color: $color-secondary-accent;
+					}
+				}
+
+				img {
+					width: 160px;
+					height: 50px;
+				}
+
+				button {
+					width: 160px;
+					height: 50px;
+					font-size: 16px;
+
+					&:hover {
+						background: $color-secondary-accent;
+					}
+				}
+			}
+		}
+		.list__container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			max-width: 700px;
+			margin: 0 auto;
+			.box {
+				font-size: 12px;
+				padding: 15px;
+
+				&:hover {
+					background: transparent;
+					color: $color-text-general;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 716px) {
+	.services {
+		.text__container {
+			gap: 7px;
+			p {
+				font-size: 9px;
+			}
+
+			hr {
+				width: 150px;
+			}
+		}
+
+		.title__container {
+			.title {
+				gap: 20px;
+
+				h1 {
+					font-size: 25px;
+
+					b {
+						color: $color-secondary-accent;
+					}
+				}
+
+				img {
+					width: 120px;
+					height: 40px;
+				}
+
+				button {
+					width: 120px;
+					height: 40px;
+					font-size: 14px;
+
+					&:hover {
+						background: $color-secondary-accent;
+					}
+				}
+			}
+		}
+		.list__container {
+			max-width: 600px;
+			margin: 0 auto;
+			.box {
+				font-size: 10px;
+				padding: 13px;
+
+				border-color: $color-secondary-accent;
+
+				h2 {
+					color: $color-secondary-accent;
+				}
+
+				button {
+					background: $background-sidebar-color;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 613px) {
+	.services {
+		gap: 0;
+
+		.text__container {
+			gap: 7px;
+			p {
+				font-size: 9px;
+			}
+
+			hr {
+				width: 150px;
+			}
+		}
+
+		.title__container {
+			.title {
+				gap: 10px;
+
+				h1 {
+					font-size: 22px;
+
+					b {
+						color: $color-secondary-accent;
+					}
+				}
+
+				img {
+					width: 100px;
+					height: 30px;
+				}
+
+				button {
+					font-weight: bold;
+					width: 100px;
+					height: 30px;
+					font-size: 13px;
+				}
+			}
+		}
+		.list__container {
+			max-width: 500px;
+			margin: 0 auto;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+
+			.box {
+				font-size: 12px;
+				padding: 10px;
+				margin-bottom: 0;
+				gap: 10px;
+
+				@for $i from 1 through 3 {
+					&:nth-child(#{$i}) {
+						border: 1px solid $color-text-general;
+					}
+				}
+
+				&:nth-child(3),
+				&:nth-child(4) {
+					margin-bottom: 20px;
+				}
+
+				button {
+					padding: 5px;
+					background: $background-sidebar-color;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.services {
+		.text__container {
+			hr {
+				width: 50px;
+			}
+		}
+
+		.title__container {
+			align-items: flex-end;
+			padding-right: 10px;
+			.title {
+				gap: 10px;
+
+				h1 {
+					font-size: 22px;
+
+					b {
+						color: $color-secondary-accent;
+					}
+				}
+
+				img {
+					width: 100px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 458px) {
+	.services {
+		.title__container {
+			align-items: flex-end;
+			padding-right: 10px;
+			.title {
+				gap: 10px;
+
+				h1 {
+					font-size: 18px;
+
+					b {
+						color: $color-secondary-accent;
+					}
+				}
+
+				img {
+					width: 80px;
+					height: 30px;
+				}
+
+				button {
+					font-weight: bold;
+					width: 80px;
+					height: 30px;
+					font-size: 12px;
+					line-height: 1;
+				}
+			}
+		}
+
+		.list__container {
+			.box {
+				font-size: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 458px) {
+	.services {
+		.title__container {
+			align-items: flex-end;
+			padding-right: 10px;
+			.title {
+				gap: 10px;
+
+				h1 {
+					font-size: 16px;
+
+					b {
+						color: $color-secondary-accent;
+					}
+				}
+
+				img {
+					width: 50px;
+					height: 30px;
+				}
+
+				button {
+					font-weight: bold;
+					width: 80px;
+					height: 30px;
+					font-size: 10px;
+					line-height: 1;
+				}
+			}
+		}
+
+		.list__container {
+			.box {
+				font-size: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 334px) {
+	.services {
+		.title__container {
+			gap: 5px;
+			.title {
+				h1 {
+					font-size: 16px;
+				}
+
+				img {
+					display: none;
+				}
+
+				button {
+					font-weight: bold;
+					width: 80px;
+					height: 30px;
+					font-size: 10px;
+					line-height: 1;
+				}
+			}
+		}
+
+		.list__container {
+			.box {
+				font-size: 10px;
+			}
+		}
+	}
+}

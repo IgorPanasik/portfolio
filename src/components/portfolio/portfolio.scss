@@ -1,0 +1,85 @@
+@import "../../variables";
+
+.portfolio {
+	position: relative;
+
+	.progress {
+		position: sticky;
+		top: 0;
+		left: 0;
+		padding-top: 50px;
+		text-align: center;
+		color: $color-secondary-accent;
+		font-size: 36px;
+
+		.progress__bar {
+			height: 10px;
+			background: $background-sidebar-color;
+		}
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 50px;
+			max-width: 1366px;
+			height: 100%;
+			margin: 0 auto;
+			padding: 10px;
+
+			.image__container {
+				flex: 1;
+			}
+
+			img {
+				object-fit: cover;
+				border-radius: 20px;
+				transition: 0.3s transform ease-in-out;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+
+			.text__container {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+
+				gap: 30px;
+
+				h2 {
+					font-size: 72px;
+				}
+
+				p {
+					font-size: 20px;
+				}
+
+				button {
+					background: $color-secondary-accent;
+					border: none;
+					border-radius: 10px;
+					padding: 10px;
+					width: 200px;
+					cursor: pointer;
+					transition: 0.3s all ease-in;
+
+					&:hover {
+						background: $background-sidebar-color;
+						color: $background-general;
+					}
+				}
+			}
+		}
+	}
+}
