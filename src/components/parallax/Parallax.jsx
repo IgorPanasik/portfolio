@@ -2,6 +2,7 @@ import "./parallax.scss";
 import "./media-parallax.scss";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const Parallax = ({ type }) => {
 	const ref = useRef();
@@ -9,9 +10,18 @@ const Parallax = ({ type }) => {
 		target: ref,
 		offset: ["start start", "end start"],
 	});
+	const isMobile = useMediaQuery({ query: "(max-width: 700px)" });
 
-	const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-	const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+	const yText = useTransform(
+		scrollYProgress,
+		[0, 1],
+		isMobile ? ["0%", "1200%"] : ["0%", "500%"]
+	);
+	const yBg = useTransform(
+		scrollYProgress,
+		[0, 1],
+		isMobile ? ["0%", "300%"] : ["0%", "100%"]
+	);
 
 	return (
 		<div
@@ -32,7 +42,7 @@ const Parallax = ({ type }) => {
 				style={{
 					y: yBg,
 					backgroundImage: `url(${
-						type === "services" ? "/planets.png" : "/sun.png"
+						type === "services" ? "./planets.png" : "./sun.png"
 					})`,
 				}}
 				className="planets"
