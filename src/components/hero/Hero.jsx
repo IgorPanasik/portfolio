@@ -1,7 +1,7 @@
-import "./hero.scss";
-import "./media-hero.scss";
-import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import './hero.scss';
+import './media-hero.scss';
 
 const textVariants = {
 	initial: {
@@ -32,10 +32,10 @@ const sliderVariants = {
 		x: 0,
 	},
 	animate: {
-		x: "-220%",
+		x: '-220%',
 		transition: {
 			repeat: Infinity,
-			repeatType: "mirror",
+			repeatType: 'mirror',
 			duration: 20,
 		},
 	},
@@ -43,35 +43,35 @@ const sliderVariants = {
 
 const Hero = () => {
 	return (
-		<div className="hero">
-			<div className="hero__wrapper">
+		<div className='hero'>
+			<div className='hero__wrapper'>
 				<motion.div
-					className="hero__text-container"
+					className='hero__text-container'
 					variants={textVariants}
-					initial="initial"
-					animate="animate"
+					initial='initial'
+					animate='animate'
 				>
 					<motion.h2 variants={textVariants}>Panasik Igor</motion.h2>
 					<motion.h1 variants={textVariants}>
 						Frontend developer and UI designer
 					</motion.h1>
-					<motion.div variants={textVariants} className="hero__buttons">
+					<motion.div variants={textVariants} className='hero__buttons'>
 						<motion.button variants={textVariants}>
-							<Link to="Portfolio" smooth={true} duration={500}>
+							<Link to='Portfolio' smooth={true} duration={500}>
 								See the Latest Works
 							</Link>
 						</motion.button>
 						<motion.button variants={textVariants}>
-							<Link to="Contact" smooth={true} duration={500}>
+							<Link to='Contact' smooth={true} duration={500}>
 								Contact Me
 							</Link>
 						</motion.button>
 					</motion.div>
 					<motion.img
 						variants={textVariants}
-						src="./scroll.png"
-						alt="scroll"
-						animate="scrollButton"
+						src='./scroll.webp'
+						alt='scroll'
+						animate='scrollButton'
 					/>
 				</motion.div>
 
@@ -85,17 +85,17 @@ const Hero = () => {
 							staggerChildren: 0.1,
 						},
 					}}
-					className="hero__image-container"
+					className='hero__image-container'
 				>
-					<img src="./creator.jpg" alt="a human" />
+					<img src='./creator.webp' alt='a human' />
 				</motion.div>
 			</div>
 
 			<motion.div
-				className="sliding__text-container"
+				className='sliding__text-container'
 				variants={sliderVariants}
-				initial="initial"
-				animate="animate"
+				initial='initial'
+				animate='animate'
 			>
 				My name is Panasik Igor
 			</motion.div>
