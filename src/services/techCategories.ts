@@ -9,6 +9,7 @@ export const techCategories = [
 			'TypeScript',
 			'CSS/SCSS',
 			'PostCSS',
+			'Data Structures & Algorithms',
 		],
 	},
 	{
@@ -34,6 +35,6 @@ export const techCategories = [
 	{
 		title: 'Foreign Languages',
 
-		techs: ['English Level A2-B1'],
+		techs: ['English Level B1'],
 	},
 ];

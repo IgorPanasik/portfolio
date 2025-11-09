@@ -45,22 +45,26 @@ export default function Contact() {
 		}
 
 		if (form.current) {
-			emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-				result => {
-					setNotification({
-						message: 'Email sent successfully!',
-						type: 'success',
-					});
-					form.current?.reset();
-				},
-				error => {
-					setNotification({
-						message: 'Error sending email. Try again.',
-						type: 'error',
-					});
-					form.current?.reset();
-				}
-			);
+			emailjs
+				.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+					publicKey: PUBLIC_KEY,
+				})
+				.then(
+					(result) => {
+						setNotification({
+							message: 'Email sent successfully!',
+							type: 'success',
+						});
+						form.current?.reset();
+					},
+					(error) => {
+						setNotification({
+							message: 'Error sending email. Try again.',
+							type: 'error',
+						});
+						form.current?.reset();
+					},
+				);
 		}
 	};
 
@@ -78,8 +82,8 @@ export default function Contact() {
 			return;
 		}
 		const observer = new IntersectionObserver(
-			entries => {
-				entries.forEach(entry => {
+			(entries) => {
+				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						entry.target.classList.add(styles.visible);
 					} else {
@@ -87,7 +91,7 @@ export default function Contact() {
 					}
 				});
 			},
-			{ threshold: 0.1 }
+			{ threshold: 0.1 },
 		);
 
 		if (formContainerRef.current) {
