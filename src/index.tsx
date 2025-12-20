@@ -11,5 +11,5 @@ const container = createRoot(root);
 container.render(
 	<BrowserRouter>
 		<App />
-	</BrowserRouter>
+	</BrowserRouter>,
 );

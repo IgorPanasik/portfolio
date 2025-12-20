@@ -1,5 +1,4 @@
-import resumeDocx from '@/assets/data/resume.docx';
-import resumePdf from '@/assets/data/resume.pdf';
+import resumePdf from '@/assets/data/panasik_igor_resume.pdf';
 import * as styles from '@/styles/layout/_Header.module.scss';
 import { useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
@@ -41,7 +40,7 @@ export const DownloadResume = ({
 
 	const handleClickDownload = (e: React.MouseEvent) => {
 		e.stopPropagation();
-		setDownloadOpen(prev => !prev);
+		setDownloadOpen((prev) => !prev);
 	};
 
 	const handleDownloadFile = (file: string, fileName: string) => {
@@ -57,8 +56,7 @@ export const DownloadResume = ({
 		<div
 			className={`${styles.header__download} ${
 				isMobile && burgerMenuOpen ? styles['download-show'] : ''
-			}`}
-		>
+			}`}>
 			<button
 				ref={downloadRef}
 				aria-expanded={downloadOpen}
@@ -68,15 +66,13 @@ export const DownloadResume = ({
 				}
 				type='button'
 				className={styles['header__download-button']}
-				onClick={handleClickDownload}
-			>
+				onClick={handleClickDownload}>
 				Download Resume
 				<span
 					className={`${styles.chevron} ${
 						downloadOpen ? styles['chevron-rotate'] : ''
 					} `}
-					aria-hidden='true'
-				>
+					aria-hidden='true'>
 					<i className='fa-solid fa-chevron-down'></i>
 				</span>
 			</button>
@@ -90,31 +86,18 @@ export const DownloadResume = ({
 					exit: styles.dropdownExit,
 					exitActive: styles.dropdownExitActive,
 				}}
-				unmountOnExit
-			>
+				unmountOnExit>
 				<div
 					ref={nodeRef}
 					id='download-dropdown'
 					role='menu'
 					className={`${styles.header__dropdown} 
-					`}
-				>
+					`}>
 					<button
 						type='button'
 						role='menuitem'
 						className={styles['header__dropdown-item']}
-						onClick={() => handleDownloadFile(resumeDocx, 'resume.docx')}
-					>
-						<i className='fas fa-file-word'></i>
-						resume.docx
-					</button>
-
-					<button
-						type='button'
-						role='menuitem'
-						className={styles['header__dropdown-item']}
-						onClick={() => handleDownloadFile(resumePdf, 'resume.pdf')}
-					>
+						onClick={() => handleDownloadFile(resumePdf, 'resume.pdf')}>
 						<i className='fas fa-file-pdf'></i>
 						resume.pdf
 					</button>
