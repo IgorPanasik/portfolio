@@ -6,7 +6,7 @@ import { BuildMode, IBuildPath } from './config/build/types/types';
 interface IEnvVariables {
 	mode: BuildMode;
 	port: number;
-	analyzer: boolean;
+	analyzer: boolean | string;
 }
 
 export default (env: IEnvVariables) => {
@@ -21,7 +21,7 @@ export default (env: IEnvVariables) => {
 	const config: webpack.Configuration = buildWebpack({
 		port: env.port ?? 3000,
 		mode: env.mode ?? 'development',
-		analyzer: env.analyzer,
+		analyzer: env.analyzer === true || env.analyzer === 'true',
 		paths,
 	});
 	return config;

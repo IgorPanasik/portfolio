@@ -13,5 +13,5 @@ export interface IBuildOptions {
 	port: number;
 	paths: IBuildPath;
 	mode: BuildMode;
-	analyzer?: boolean;
+	analyzer?: boolean | string;
 }
