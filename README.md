@@ -34,6 +34,20 @@ Here I showcase modern frontend practices and demonstrate my approach to archite
 
 ---
 
+## Email Sending Setup with GitHub Actions
+The project configured to send emails by securely managing environment keys through GitHub Actions.
+A dedicated workflow file was created to generate the .env file during the CI/CD process. 
+This workflow automatically injects the required service keys (stored as GitHub Actions secrets) into the environment at build time.
+
+## How it works
+- The sensitive keys are stored in GitHub Actions Secrets within the repository settings.
+
+- During the workflow run, GitHub Actions creates a temporary .env file and writes those secrets into it.
+
+- The application then reads these values at runtime, enabling secure email sending without exposing the keys in the repository.
+
+- Once the workflow finishes, the .env file exists only in the runner environment and is not committed to the repo.
+
 ## 📬 Contact
 
 If you enjoyed the project or have ideas for improvement, feel free to reach out:
