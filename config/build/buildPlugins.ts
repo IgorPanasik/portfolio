@@ -23,7 +23,7 @@ export const buildPlugins = ({
 		}),
 
 		new Dotenv({
-			path: paths.env,
+			// path: paths.env,
 			systemvars: true,
 		}),
 	];
