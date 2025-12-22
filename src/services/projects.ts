@@ -36,33 +36,6 @@ export const projects: IProjects[] = [
 	},
 	{
 		id: 2,
-		title: 'The Blog',
-		img: Blog,
-		desc: 'A fullstack website is analogous to a blog, which has a database of users as well as their articles. Full Responsive.',
-		tools: [
-			'MongoDb',
-			'Firebase',
-			'Node.js',
-			'Vite',
-			'Netlify',
-			'Express.js',
-			'React.js',
-			'Scss',
-		],
-		link: 'https://blog-app-panasik-igor.netlify.app/',
-	},
-
-	{
-		id: 3,
-		title: 'The Modern ToDo',
-		img: Todo,
-		desc: 'This project provides a clean and user-friendly interface for managing your tasks, enhanced with smooth animations for a delightful user experience. Full Responsive.',
-		tools: ['Webpack', 'SWC', 'React', 'TS', 'PostCss', 'Scss'],
-		link: 'https://igorpanasik.github.io/modern-todo-list/',
-	},
-
-	{
-		id: 4,
 		title: 'The Weather',
 		img: Weather,
 		desc: 'Modern weather application. with geolocation and the ability to find out the weather for 5 days. Full Responsive.',
@@ -71,21 +44,45 @@ export const projects: IProjects[] = [
 	},
 
 	{
+		id: 3,
+		title: 'The Currency Converter',
+		img: Converter,
+		desc: 'Modern and simple the Currency Converter using APIs as well as various preferred style libraries. Full Responsive.',
+		tools: [
+			'React.js',
+			'Tailwindcss',
+			'Vite',
+			'Third-party APIs',
+			'TypeScript',
+		],
+		link: 'https://igorpanasik.github.io/currency-converter-react.js/',
+	},
+
+	{
+		id: 4,
+		title: 'The Modern ToDo',
+		img: Todo,
+		desc: 'This project provides a clean and user-friendly interface for managing your tasks, enhanced with smooth animations for a delightful user experience. Full Responsive.',
+		tools: ['Webpack', 'SWC', 'React', 'TS', 'PostCss', 'Scss'],
+		link: 'https://igorpanasik.github.io/modern-todo-list/',
+	},
+
+	{
 		id: 5,
+		title: 'The Stopwatch App',
+		img: Stopwatch,
+		desc: 'Modern and simple stopwatch application, intuitive and fully responsive.',
+		tools: ['React.js', 'Scss', 'Vite'],
+		link: 'https://igorpanasik.github.io/stopwatch-react.js/',
+	},
+
+	{
+		id: 6,
 		title: 'The Pomodoro Timer',
 		img: Pomodoro,
 		desc: 'Modern Pomodoro timer application, with the ability to change the mode and with a sound signal. Full Responsive.',
 		tools: ['React.js', 'Scss', 'Vite'],
 		link: 'https://igorpanasik.github.io/pomodoro-timer-react.js/',
-	},
-
-	{
-		id: 6,
-		title: 'The Currency Converter',
-		img: Converter,
-		desc: 'Modern and simple the Currency Converter using APIs as well as various preferred style libraries. Full Responsive.',
-		tools: ['React.js', 'Scss', 'Vite', 'Third-party APIs'],
-		link: 'https://igorpanasik.github.io/currency-converter-react.js/',
 	},
 
 	{
@@ -108,11 +105,20 @@ export const projects: IProjects[] = [
 
 	{
 		id: 9,
-		title: 'The Stopwatch App',
-		img: Stopwatch,
-		desc: 'Modern and simple stopwatch application, intuitive and fully responsive.',
-		tools: ['React.js', 'Scss', 'Vite'],
-		link: 'https://igorpanasik.github.io/stopwatch-react.js/',
+		title: 'The Blog',
+		img: Blog,
+		desc: 'A fullstack website is analogous to a blog, which has a database of users as well as their articles. Full Responsive.',
+		tools: [
+			'MongoDb',
+			'Firebase',
+			'Node.js',
+			'Vite',
+			'Netlify',
+			'Express.js',
+			'React.js',
+			'Scss',
+		],
+		link: 'https://blog-app-panasik-igor.netlify.app/',
 	},
 
 	{
