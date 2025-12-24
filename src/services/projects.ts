@@ -54,6 +54,7 @@ export const projects: IProjects[] = [
 			'Vite',
 			'Third-party APIs',
 			'TypeScript',
+			'Zod',
 		],
 		link: 'https://igorpanasik.github.io/currency-converter-react.js/',
 	},

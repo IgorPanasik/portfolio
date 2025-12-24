@@ -3,11 +3,11 @@ export const techCategories = [
 		title: 'Frontend',
 		techs: [
 			'React',
-			'React Router',
-			'React Hook Form',
 			'JavaScript(ES6+)',
 			'TypeScript',
 			'CSS/SCSS',
+			'Tailwindcss',
+			'Zod',
 			'PostCSS',
 			'Data Structures & Algorithms',
 		],
