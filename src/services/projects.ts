@@ -8,6 +8,7 @@ import Pomodoro from '@/assets/images/pomodoro.webp';
 import Quote from '@/assets/images/quote.webp';
 import Hosting from '@/assets/images/raid.webp';
 import rti from '@/assets/images/rti.png';
+import Rti24 from '@/assets/images/rti24.webp';
 import Stopwatch from '@/assets/images/stopwatch.webp';
 import Todo from '@/assets/images/todo.webp';
 import Travel from '@/assets/images/travel.webp';
@@ -31,11 +32,21 @@ export const projects: IProjects[] = [
 		title: 'Ritual Transport International',
 		img: rti,
 		desc: 'Modern and simple, beautiful Multilanguages website a funeral services. Full Responsive.',
-		tools: ['HTML', 'css', 'JavaScript', 'emailJS', 'postCSS', 'swc.js'],
+		tools: ['HTML', 'css', 'JavaScript', 'emailJS', 'postCSS', 'vite'],
 		link: 'https://rtillc.by/',
 	},
+
 	{
 		id: 2,
+		title: 'Astra Funeral Home',
+		img: Rti24,
+		desc: 'Optimized commercial landing page. Bilingual, cross-browser, and cross-platform compatible with full deployment.',
+		tools: ['HTML', 'CSS', 'JavaScript', 'emailJS', 'postCSS', 'BEM', 'Vite'],
+		link: 'https://rti24.by',
+	},
+
+	{
+		id: 3,
 		title: 'The Weather',
 		img: Weather,
 		desc: 'Modern weather application. with geolocation and the ability to find out the weather for 5 days. Full Responsive.',
@@ -44,7 +55,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 3,
+		id: 4,
 		title: 'The Currency Converter',
 		img: Converter,
 		desc: 'Modern and simple the Currency Converter using APIs as well as various preferred style libraries. Full Responsive.',
@@ -60,7 +71,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 4,
+		id: 5,
 		title: 'The Modern ToDo',
 		img: Todo,
 		desc: 'This project provides a clean and user-friendly interface for managing your tasks, enhanced with smooth animations for a delightful user experience. Full Responsive.',
@@ -69,7 +80,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 5,
+		id: 6,
 		title: 'The Stopwatch App',
 		img: Stopwatch,
 		desc: 'Modern and simple stopwatch application, intuitive and fully responsive.',
@@ -78,7 +89,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 6,
+		id: 7,
 		title: 'The Pomodoro Timer',
 		img: Pomodoro,
 		desc: 'Modern Pomodoro timer application, with the ability to change the mode and with a sound signal. Full Responsive.',
@@ -87,7 +98,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 7,
+		id: 8,
 		title: 'The Drum Machine',
 		img: Drum,
 		desc: 'Modern, exciting drum machine with different melodies and settings. Full Responsive.',
@@ -96,7 +107,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 8,
+		id: 9,
 		title: 'The Music App',
 		img: Music,
 		desc: 'A modern and simple application for listening to music, intuitive and fully responsive.',
@@ -105,7 +116,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 9,
+		id: 10,
 		title: 'The Blog',
 		img: Blog,
 		desc: 'A fullstack website is analogous to a blog, which has a database of users as well as their articles. Full Responsive.',
@@ -123,7 +134,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 10,
+		id: 11,
 		title: 'The Random Quote App',
 		img: Quote,
 		desc: 'Modern and simple random quote app, intuitive and fully responsive.',
@@ -132,7 +143,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 11,
+		id: 12,
 		title: 'The Calculate App',
 		img: Calculate,
 		desc: 'Modern and simple calculator application, intuitive and fully responsive.',
@@ -141,7 +152,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 12,
+		id: 13,
 		title: 'The Raid Hosting',
 		img: Hosting,
 		desc: 'Modern and simple, beautiful website for game hosting. Full Responsive.',
@@ -150,7 +161,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 13,
+		id: 14,
 		title: 'The Travel Website',
 		img: Travia,
 		desc: 'Modern and simple, beautiful Multipages website for Travel. Full Responsive.',
@@ -159,7 +170,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 14,
+		id: 15,
 		title: 'The Travel Blog',
 		img: Travel,
 		desc: 'Modern and simple, beautiful Multipages website for Travel. Full Responsive.',
@@ -168,7 +179,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 15,
+		id: 16,
 		title: 'The Flower Shop',
 		img: Flower,
 		desc: 'Modern and simple, beautiful Multipages website a Flower shop. Full Responsive.',
