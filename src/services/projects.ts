@@ -1,3 +1,4 @@
+import Battleship from '@/assets/images/battleship.webp';
 import Blog from '@/assets/images/blog-site.webp';
 import Calculate from '@/assets/images/calc.webp';
 import Converter from '@/assets/images/CC.webp';
@@ -18,7 +19,7 @@ import Weather from '@/assets/images/weather-site.webp';
 type Tools = string[];
 
 interface IProjects {
-	id: number;
+	id: string;
 	title: string;
 	img: string;
 	desc: string;
@@ -28,7 +29,16 @@ interface IProjects {
 
 export const projects: IProjects[] = [
 	{
-		id: 1,
+		id: crypto.randomUUID(),
+		title: 'Battleship Game — Vanilla JS Architecture & UI Showcase',
+		img: Battleship,
+		desc: 'A classic tactical naval combat game built from scratch using Modern JavaScript (ES6+), CSS3, and HTML5. This project was developed as a comprehensive educational capstone, transitioning from a single-file application into a highly decoupled, modular enterprise-grade architecture.This implementation was built as part of the JavaScript path from The Odin Project curriculum. Original Lesson Specification: The Odin Project - Battleship',
+		tools: ['HTML', 'css', 'JavaScript', 'babel', 'jest', 'webpack', 'eslint'],
+		link: 'https://igorpanasik.github.io/battleship-odin/',
+	},
+
+	{
+		id: crypto.randomUUID(),
 		title: 'Ritual Transport International',
 		img: rti,
 		desc: 'Modern and simple, beautiful Multilanguages website a funeral services. Full Responsive.',
@@ -37,7 +47,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 2,
+		id: crypto.randomUUID(),
 		title: 'Astra Funeral Home',
 		img: Rti24,
 		desc: 'Optimized commercial landing page. Bilingual, cross-browser, and cross-platform compatible with full deployment.',
@@ -46,7 +56,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 3,
+		id: crypto.randomUUID(),
 		title: 'The Weather',
 		img: Weather,
 		desc: 'Modern weather application. with geolocation and the ability to find out the weather for 5 days. Full Responsive.',
@@ -55,7 +65,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 4,
+		id: crypto.randomUUID(),
 		title: 'The Currency Converter',
 		img: Converter,
 		desc: 'Modern and simple the Currency Converter using APIs as well as various preferred style libraries. Full Responsive.',
@@ -71,7 +81,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 5,
+		id: crypto.randomUUID(),
 		title: 'The Modern ToDo',
 		img: Todo,
 		desc: 'This project provides a clean and user-friendly interface for managing your tasks, enhanced with smooth animations for a delightful user experience. Full Responsive.',
@@ -80,7 +90,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 6,
+		id: crypto.randomUUID(),
 		title: 'The Stopwatch App',
 		img: Stopwatch,
 		desc: 'Modern and simple stopwatch application, intuitive and fully responsive.',
@@ -89,7 +99,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 7,
+		id: crypto.randomUUID(),
 		title: 'The Pomodoro Timer',
 		img: Pomodoro,
 		desc: 'Modern Pomodoro timer application, with the ability to change the mode and with a sound signal. Full Responsive.',
@@ -98,7 +108,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 8,
+		id: crypto.randomUUID(),
 		title: 'The Drum Machine',
 		img: Drum,
 		desc: 'Modern, exciting drum machine with different melodies and settings. Full Responsive.',
@@ -107,7 +117,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 9,
+		id: crypto.randomUUID(),
 		title: 'The Music App',
 		img: Music,
 		desc: 'A modern and simple application for listening to music, intuitive and fully responsive.',
@@ -116,7 +126,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 10,
+		id: crypto.randomUUID(),
 		title: 'The Blog',
 		img: Blog,
 		desc: 'A fullstack website is analogous to a blog, which has a database of users as well as their articles. Full Responsive.',
@@ -134,7 +144,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 11,
+		id: crypto.randomUUID(),
 		title: 'The Random Quote App',
 		img: Quote,
 		desc: 'Modern and simple random quote app, intuitive and fully responsive.',
@@ -143,7 +153,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 12,
+		id: crypto.randomUUID(),
 		title: 'The Calculate App',
 		img: Calculate,
 		desc: 'Modern and simple calculator application, intuitive and fully responsive.',
@@ -152,7 +162,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 13,
+		id: crypto.randomUUID(),
 		title: 'The Raid Hosting',
 		img: Hosting,
 		desc: 'Modern and simple, beautiful website for game hosting. Full Responsive.',
@@ -161,7 +171,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 14,
+		id: crypto.randomUUID(),
 		title: 'The Travel Website',
 		img: Travia,
 		desc: 'Modern and simple, beautiful Multipages website for Travel. Full Responsive.',
@@ -170,7 +180,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 15,
+		id: crypto.randomUUID(),
 		title: 'The Travel Blog',
 		img: Travel,
 		desc: 'Modern and simple, beautiful Multipages website for Travel. Full Responsive.',
@@ -179,7 +189,7 @@ export const projects: IProjects[] = [
 	},
 
 	{
-		id: 16,
+		id: crypto.randomUUID(),
 		title: 'The Flower Shop',
 		img: Flower,
 		desc: 'Modern and simple, beautiful Multipages website a Flower shop. Full Responsive.',
