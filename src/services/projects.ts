@@ -2,6 +2,7 @@ import Battleship from '@/assets/images/battleship.webp';
 import Blog from '@/assets/images/blog-site.webp';
 import Calculate from '@/assets/images/calc.webp';
 import Converter from '@/assets/images/CC.webp';
+import ContactApi from '@/assets/images/ContactApi.webp';
 import Drum from '@/assets/images/drum.webp';
 import Flower from '@/assets/images/flower.webp';
 import Music from '@/assets/images/music-player.webp';
@@ -30,6 +31,31 @@ interface IProjects {
 export const projects: IProjects[] = [
 	{
 		id: crypto.randomUUID(),
+		title: 'Contact Management System.',
+		img: ContactApi,
+		desc: 'Full-stack CRUD application for managing contacts.Full-stack CRUD app built with C#, ASP.NET Core Web API, EF Core, and Vanilla JS. Features modular architecture, client/server validation, DTO pattern, and a responsive Bootstrap UI. Created to explore the .NET ecosystem beyond frontend. Note: Run locally with "dotnet run" (see README)',
+		tools: [
+			'C#',
+			'ASP.NET Core Web API',
+			'Entity Framework Core',
+			'SQLite',
+			'JavaScript (ES6+)',
+			'Bootstrap 5',
+		],
+		link: 'https://rti24.by',
+	},
+
+	{
+		id: crypto.randomUUID(),
+		title: 'Astra Funeral Home',
+		img: Rti24,
+		desc: 'Optimized commercial landing page. Bilingual, cross-browser, and cross-platform compatible with full deployment.',
+		tools: ['HTML', 'CSS', 'JavaScript', 'emailJS', 'postCSS', 'BEM', 'Vite'],
+		link: 'https://rti24.by',
+	},
+
+	{
+		id: crypto.randomUUID(),
 		title: 'Battleship Game — Vanilla JS Architecture & UI Showcase',
 		img: Battleship,
 		desc: 'A classic tactical naval combat game built from scratch using Modern JavaScript (ES6+), CSS3, and HTML5. This project was developed as a comprehensive educational capstone, transitioning from a single-file application into a highly decoupled, modular enterprise-grade architecture.This implementation was built as part of the JavaScript path from The Odin Project curriculum. Original Lesson Specification: The Odin Project - Battleship',
@@ -44,15 +70,6 @@ export const projects: IProjects[] = [
 		desc: 'Modern and simple, beautiful Multilanguages website a funeral services. Full Responsive.',
 		tools: ['HTML', 'css', 'JavaScript', 'emailJS', 'postCSS', 'vite'],
 		link: 'https://rtillc.by/',
-	},
-
-	{
-		id: crypto.randomUUID(),
-		title: 'Astra Funeral Home',
-		img: Rti24,
-		desc: 'Optimized commercial landing page. Bilingual, cross-browser, and cross-platform compatible with full deployment.',
-		tools: ['HTML', 'CSS', 'JavaScript', 'emailJS', 'postCSS', 'BEM', 'Vite'],
-		link: 'https://rti24.by',
 	},
 
 	{
